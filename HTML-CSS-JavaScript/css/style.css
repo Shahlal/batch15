@@ -1,0 +1,13 @@
+body {
+    background-color:rgb(235, 243, 235);
+}
+
+.text-center {
+    text-align: center;
+    color: darkgreen;
+    background-color: floralwhite;
+}
+
+#participant_name {
+    background-color: hotpink;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Form</title>
+    
+        <meta charset="UTF-8">
+        <meta name="description" content="Web Design Tutorials by SET">
+        <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript, jQuery">
+        <meta name="author" content="Shahlal Hossain">
+    
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="stylesheet" href="custom.css">
+    
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="custom.js"></script>
+    
+        <style type="text/css">
+            
+        </style>
+    
+    </head>
+    <body>
+        <h1>HTML Form with Elements</h1>
+
+        <form action="store.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required="required" size="50"><br>
+            
+            <label for="mobile">Mobile Number:</label>
+            <input type="text" id="mobile" name="mobile" placeholder="Your Mobile Number" required="required" size="13"><br>
+            
+            <label for="email">Email ID/Address:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required="required"><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Your Password" required="required"><br>
+            
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+            
+            <fieldset>
+                <legend>Your Favorit Colour:</legend>
+                <input type="checkbox" name="favorit_colour" value="red">
+                <label style="color:red;">Red</label>
+                <input type="checkbox" name="favorit_colour" value="orange">
+                <label style="color:orange;">Orange</label>
+                <input type="checkbox" name="favorit_colour" value="yellow">
+                <label style="color:yellow;">Yellow</label>
+                <input type="checkbox" name="favorit_colour" value="green">
+                <label style="color:green;">Green</label>
+                <br>
+
+                <input type="checkbox" name="favorit_colour" value="blue">
+                <label style="color:blue;">Blue</label>
+                <input type="checkbox" name="favorit_colour" value="indigo">
+                <label style="color:indigo;">Indigo</label>
+                <input type="checkbox" name="favorit_colour" value="violet">
+                <label style="color:violet;">Violet</label>
+                <input type="checkbox" name="favorit_colour" value="purple">
+                <label style="color:purple;">Purple</label>
+                <br>
+
+                <input type="checkbox" name="favorit_colour" value="pink">
+                <label style="color:pink;">Pink</label>
+                <input type="checkbox" name="favorit_colour" value="silver">
+                <label style="color:silver;">Silver</label>
+                <input type="checkbox" name="favorit_colour" value="gold">
+                <label style="color:gold;">Gold</label>
+                <input type="checkbox" name="favorit_colour" value="brown">
+                <label style="color:brown;">Brown</label>
+                <br>
+
+                <input type="checkbox" name="favorit_colour" value="grey">
+                <label style="color:grey;">Grey</label>
+                <input type="checkbox" name="favorit_colour" value="black">
+                <label style="color:black;">Black</label>
+            </fieldset>
+
+            <label for="car">Choose A Car:</label>
+            <select id="car" name="car">
+                <option value="" selected>Select Car</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+            <br>
+
+            <label for="browser">Choose Browser:</label>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <br>
+
+            <textarea name="message" rows="5" cols="40" placeholder="Enter Your Message Here..."></textarea>
+            <br>
+
+            <button type="button" onclick="alert('Wow, You Click Me')">Alert Button</button>
+            <br>
+
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor">
+            <br>
+
+            <label for="birthday">Date of Birth:</label>
+            <input type="date" id="birthday" name="birthday">
+            <br>
+
+            <fieldset>
+                <legend>Enter a Date Range:</legend>
+                <label for="datemin">From</label>
+                <input type="date" id="datemin" name="datemin" min="2000-01-01">
+                <label for="datemax">To:</label>
+                <input type="date" id="datemax" name="datemax" max="2020-12-31">
+            </fieldset>
+            <br>
+
+            <label for="profile_picture">Select a File:</label>
+            <input type="file" id="profile_picture" name="profile_picture">
+            <br>
+
+            <label for="vol">Volume (From 0 To 50):</label>
+            <br>
+
+            <input type="range" id="vol" name="vol" min="0" max="50">
+
+            <input type="hidden" id="custId" name="custId" value="3487">
+
+            <label for="appt">Select a time:</label>
+            <input type="time" id="appt" name="appt">
+            <br>
+
+            <input type="reset">
+            <input type="submit" value="Submit">
+
+        </form>
+    </body>
+</html>
